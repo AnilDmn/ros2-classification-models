@@ -15,32 +15,31 @@ Logging: Model performance and inference results are logged
 # Project Structure
 
 ml_classifiers_pkg/
-├── plots/                          # Saved visualizations
-│   ├── confusion_matrix.png
-│   ├── feature_distributions.png
-│   └── weight_vs_sphericity.png
-├── results/                        # Classification results
-│   └── fruit_classification_results_*.txt
-├── ml_classifiers_pkg/            # Python package (ROS 2 node implementations)
+├── data/                     # Input datasets
+│   ├── Breast_Cancer.csv
+│   ├── Iris.csv
+│   ├── Penguin.csv
+│   └── fruits_weight_sphericity.csv
+├── ml_classifiers_pkg/       # Python package (ROS 2 node implementations)
 │   ├── __init__.py
 │   ├── cancer_node.py
 │   ├── fruit_node.py
 │   ├── iris_node.py
 │   └── penguin_node.py
-├── data/                           # Input datasets
-│   ├── Breast_Cancer.csv
-│   ├── Iris.csv
-│   ├── Penguin.csv
-│   └── fruits_weight_sphercity.csv
-├── package.xml                    # ROS 2 package manifest
-├── setup.py                       # Python setup script for ROS 2
-└── plots/                         # All generated visualizations organized by dataset
+├── plots/                   # Saved visualizations
+│   ├── confusion_matrix.png
+│   ├── feature_distributions.png
+│   └── weight_vs_sphericity.png
+├── results/                 # Classification results
+│   └── fruit_classification_results_*.txt
+├── package.xml              # ROS 2 package manifest
+├── setup.py                 # Python setup script for ROS 2
 
-Requirements
+# Requirements
 ROS 2 Humble or newer
 Python 3.10+
 
-Dependencies:
+# Dependencies:
 numpy
 pandas
 scikit-learn
@@ -48,10 +47,10 @@ seaborn
 matplotlib
 rclpy
 
-Install them with:
+# Install them with:
 pip install -r requirements.txt
 
-Build Instructions:
+# Build Instructions:
 # Source ROS 2
 source /opt/ros/humble/setup.bash
 
@@ -64,7 +63,7 @@ colcon build --packages-select ml_classifiers_pkg
 # Source the overlay
 source install/setup.bash
 
-Running Nodes:
+# Running Nodes:
 
 # Cancer Classification
 ros2 run ml_classifiers_pkg cancer_node
@@ -78,7 +77,7 @@ ros2 run ml_classifiers_pkg iris_node
 # Penguin Classification
 ros2 run ml_classifiers_pkg penguin_node
 
-Output:
+# Output:
 Inference results are stored in results/
 Plots are saved in plots/ and install/ml_classifiers_pkg/share/ml_classifiers_pkg/plots/
 Typical outputs include:
@@ -87,5 +86,5 @@ Feature histograms
 Correlation matrices
 Scatter and pair plots
 
-Notes:
+# Notes:
 Nodes read datasets from the data/ folder and save results in results/.
