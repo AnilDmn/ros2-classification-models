@@ -1,0 +1,70 @@
+Color,Weight,Sphericity,labels
+Red,200,0.4,apple
+Orange,320,1,orange
+Orange,310,0.95,orange
+Red,220,0.45,apple
+Red,230,0.5,apple
+Red,245,0.4,apple
+Red,240,0.35,apple
+Greenish yellow,330,0.98,orange
+Greenish yellow,315,0.9,orange
+Red,243,0.53,apple
+Greenish yellow,333,0.92,orange
+Green,255,0.6,apple
+Green,259,0.42,apple
+Reddish yellow,253,0.51,apple
+Green,272,0.7,orange
+Greenish yellow,260,0.75,orange
+Reddish yellow,267,0.48,apple
+Reddish yellow,265,0.6,apple
+Green,266,0.68,orange
+Reddish yellow,266,0.7,apple
+Reddish yellow,260,0.3,apple
+Green,220,0.33,apple
+Green,326,0.98,orange
+Green,313,0.91,orange
+Red,210,0.39,apple
+Red,232,0.44,apple
+Reddish yellow,236,0.6,apple
+Reddish yellow,270,0.333,apple
+Green,330,0.89,orange
+Reddish yellow,233,0.41,apple
+Green,269,0.67,orange
+Green,255,0.69,orange
+Green,261,0.39,apple
+Green,271,0.55,apple
+Green,269,0.71,orange
+Green,250,0.59,apple
+Green,270,0.37,apple
+Red,266,0.69,apple
+Red,200,0.46,apple
+Red,200,0.47,apple
+Red,204,0.4,apple
+Red,200,0.48,apple
+Red,210,0.42,apple
+Greenish yellow,350,0.4,orange
+Orange,346,1,orange
+Orange,348,0.95,orange
+Red,210,0.3,apple
+Red,225,0.25,apple
+Red,240,0.5,apple
+Red,267,0.6,apple
+Orange,272,0.8,orange
+Red,260,0.5,apple
+Red,311,0.73,orange
+Greenish yellow,333,0.92,orange
+Red,320,0.8,orange
+Red,250,0.42,apple
+Red,200,0.1,apple
+Reddish yellow,201,0.7,apple
+Green,300,0.75,orange
+Greenish yellow,310,0.75,orange
+Greenish yellow,333,0.8,orange
+Green,344,0.68,orange
+Red,355,0.5,apple
+Reddish yellow,344,0.7,apple
+Red,200,0.43,apple
+Red,200,0.49,apple
+Red,200,0.42,apple
+Red,201,0.4,apple
+Red,202,0.4,apple

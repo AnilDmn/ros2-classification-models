@@ -1,0 +1,81 @@
+======================================================================
+PENGUIN SPECIES CLASSIFICATION RESULTS
+======================================================================
+Timestamp: 2025-06-15 19:52:41
+Model Type: SVM Linear Classifier
+Dataset Source: seaborn built-in dataset
+
+DATASET INFORMATION:
+----------------------------------------
+Original Shape: (344, 7)
+Cleaned Shape: (333, 7)
+Columns: ['species', 'island', 'bill_length_mm', 'bill_depth_mm', 'flipper_length_mm', 'body_mass_g', 'sex']
+Features Used: ['bill_length_mm', 'bill_depth_mm', 'flipper_length_mm', 'body_mass_g', 'island_encoded', 'sex_encoded']
+
+MISSING VALUES (before cleaning):
+  species: 0
+  island: 0
+  bill_length_mm: 2
+  bill_depth_mm: 2
+  flipper_length_mm: 2
+  body_mass_g: 2
+  sex: 11
+
+SPECIES DISTRIBUTION:
+----------------------------------------
+  Adelie: 146
+  Gentoo: 119
+  Chinstrap: 68
+
+DATA SPLIT:
+----------------------------------------
+Training Size: 233
+Test Size: 100
+Test Ratio: 0.3
+
+MODEL PERFORMANCE:
+----------------------------------------
+Accuracy: 1.0000
+Class Labels: ['Adelie', 'Chinstrap', 'Gentoo']
+
+CONFUSION MATRIX:
+----------------------------------------
+        Predicted
+          Adelie  Chinstra    Gentoo
+  Adelie        44         0         0
+Chinstra         0        20         0
+  Gentoo         0         0        36
+
+DETAILED CLASSIFICATION REPORT:
+----------------------------------------
+              precision    recall  f1-score   support
+
+      Adelie       1.00      1.00      1.00        44
+   Chinstrap       1.00      1.00      1.00        20
+      Gentoo       1.00      1.00      1.00        36
+
+    accuracy                           1.00       100
+   macro avg       1.00      1.00      1.00       100
+weighted avg       1.00      1.00      1.00       100
+
+
+GENERATED FILES:
+----------------------------------------
+- Plots saved to: /home/anild/ros2_ml_ws/src/ml_classifiers_pkg/plots/penguin
+- Results saved to: /home/anild/ros2_ml_ws/src/ml_classifiers_pkg/results/penguin_classification_results_20250615_195244.txt
+- Generated plots:
+  * svm_confusion_matrix.png
+  * billlength_distribution.png
+  * billdepth_distribution.png
+  * flipperlength_distribution.png
+  * bodymass_distribution.png
+  * species_by_island.png
+  * correlation_matrix.png
+
+MODEL CONFIGURATION:
+----------------------------------------
+- Algorithm: Support Vector Machine (SVM)
+- Kernel: Linear
+- Random State: 42
+- Feature Scaling: StandardScaler
+- Cross-validation: Stratified train-test split

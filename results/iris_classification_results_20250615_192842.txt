@@ -1,0 +1,122 @@
+======================================================================
+IRIS DATASET CLASSIFICATION RESULTS
+======================================================================
+Timestamp: 2025-06-15 19:28:36
+
+DATASET INFORMATION:
+----------------------------------------
+Dataset Shape: (150, 4)
+Features: ['sepal length (cm)', 'sepal width (cm)', 'petal length (cm)', 'petal width (cm)']
+Classes: ['setosa', 'versicolor', 'virginica']
+Samples per Class:
+  - setosa: 50
+  - versicolor: 50
+  - virginica: 50
+
+DATA SPLIT:
+----------------------------------------
+Training Size: 105
+Test Size: 45
+Split Ratio: 70% train / 30% test
+
+MODEL PERFORMANCE COMPARISON:
+----------------------------------------
+Model Performance Summary:
+Model           Accuracy  
+-------------------------
+KNN             0.9111    
+DecisionTree    0.9333    
+RandomForest    0.8889    
+
+KNN DETAILED RESULTS:
+--------------------------------------------------
+Accuracy: 0.9111
+
+Confusion Matrix:
+           Predicted
+         Setosa  Versicolor  Virginica
+Setosa      15         0         0
+Versicolor   0        15         0
+Virginica    0         4        11
+
+Detailed Classification Report:
+              precision    recall  f1-score   support
+
+      setosa       1.00      1.00      1.00        15
+  versicolor       0.79      1.00      0.88        15
+   virginica       1.00      0.73      0.85        15
+
+    accuracy                           0.91        45
+   macro avg       0.93      0.91      0.91        45
+weighted avg       0.93      0.91      0.91        45
+
+==================================================
+
+DECISIONTREE DETAILED RESULTS:
+--------------------------------------------------
+Accuracy: 0.9333
+
+Confusion Matrix:
+           Predicted
+         Setosa  Versicolor  Virginica
+Setosa      15         0         0
+Versicolor   0        12         3
+Virginica    0         0        15
+
+Detailed Classification Report:
+              precision    recall  f1-score   support
+
+      setosa       1.00      1.00      1.00        15
+  versicolor       1.00      0.80      0.89        15
+   virginica       0.83      1.00      0.91        15
+
+    accuracy                           0.93        45
+   macro avg       0.94      0.93      0.93        45
+weighted avg       0.94      0.93      0.93        45
+
+==================================================
+
+RANDOMFOREST DETAILED RESULTS:
+--------------------------------------------------
+Accuracy: 0.8889
+
+Confusion Matrix:
+           Predicted
+         Setosa  Versicolor  Virginica
+Setosa      15         0         0
+Versicolor   0        14         1
+Virginica    0         4        11
+
+Detailed Classification Report:
+              precision    recall  f1-score   support
+
+      setosa       1.00      1.00      1.00        15
+  versicolor       0.78      0.93      0.85        15
+   virginica       0.92      0.73      0.81        15
+
+    accuracy                           0.89        45
+   macro avg       0.90      0.89      0.89        45
+weighted avg       0.90      0.89      0.89        45
+
+==================================================
+
+GENERATED FILES:
+----------------------------------------
+Plots Directory: /home/anild/ros2_ml_ws/src/ml_classifiers_pkg/plots/iris
+Results File: /home/anild/ros2_ml_ws/src/ml_classifiers_pkg/results/iris_classification_results_20250615_192842.txt
+
+Generated Visualizations:
+- Confusion matrices for each model:
+  * knn_confusion_matrix.png
+  * decisiontree_confusion_matrix.png
+  * randomforest_confusion_matrix.png
+- Dataset visualizations:
+  * iris_pairplot.png
+  * feature_distributions_combined.png
+  * Individual feature distribution plots
+
+ANALYSIS SUMMARY:
+----------------------------------------
+Best Performing Model: DecisionTree (Accuracy: 0.9333)
+Average Accuracy: 0.9111
+Standard Deviation: 0.0181

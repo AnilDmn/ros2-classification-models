@@ -1,0 +1,106 @@
+======================================================================
+BREAST CANCER CLASSIFICATION RESULTS - SVM LINEAR CLASSIFIER
+======================================================================
+Timestamp: 2025-06-15 19:48:38
+
+DATASET INFORMATION:
+----------------------------------------
+Dataset Shape: (569, 30)
+Number of Features: 30
+Classes: ['malignant', 'benign']
+Class Distribution: {'benign': 357, 'malignant': 212}
+
+FEATURE NAMES:
+----------------------------------------
+ 1. mean radius
+ 2. mean texture
+ 3. mean perimeter
+ 4. mean area
+ 5. mean smoothness
+ 6. mean compactness
+ 7. mean concavity
+ 8. mean concave points
+ 9. mean symmetry
+10. mean fractal dimension
+11. radius error
+12. texture error
+13. perimeter error
+14. area error
+15. smoothness error
+16. compactness error
+17. concavity error
+18. concave points error
+19. symmetry error
+20. fractal dimension error
+21. worst radius
+22. worst texture
+23. worst perimeter
+24. worst area
+25. worst smoothness
+26. worst compactness
+27. worst concavity
+28. worst concave points
+29. worst symmetry
+30. worst fractal dimension
+
+DATA PREPROCESSING:
+----------------------------------------
+- Applied StandardScaler for feature normalization
+- Train-test split: 70% training, 30% testing
+- Used stratified sampling to maintain class balance
+
+DATA SPLIT INFORMATION:
+----------------------------------------
+Training Size: 398 samples
+Test Size: 171 samples
+
+MODEL CONFIGURATION:
+----------------------------------------
+Algorithm: Support Vector Machine (SVM)
+Kernel: Linear
+Random State: 42
+
+MODEL PERFORMANCE METRICS:
+----------------------------------------
+Accuracy: 0.9825
+
+CONFUSION MATRIX:
+----------------------------------------
+           Predicted
+         Malignant  Benign
+Malignant     62        2
+Benign         1      106
+
+DETAILED CLASSIFICATION REPORT:
+----------------------------------------
+              precision    recall  f1-score   support
+
+   malignant       0.98      0.97      0.98        64
+      benign       0.98      0.99      0.99       107
+
+    accuracy                           0.98       171
+   macro avg       0.98      0.98      0.98       171
+weighted avg       0.98      0.98      0.98       171
+
+
+GENERATED VISUALIZATIONS:
+----------------------------------------
+- Plots directory: /home/anild/ros2_ml_ws/src/ml_classifiers_pkg/plots/cancer
+- Generated files:
+  * svm_confusion_matrix.png - Model performance visualization
+  * class_distribution.png - Dataset class balance
+  * Feature distribution plots for top 8 features:
+    - mean_area_distribution.png
+    - mean_compactness_distribution.png
+    - mean_concave_points_distribution.png
+    - mean_concavity_distribution.png
+    - mean_perimeter_distribution.png
+    - mean_radius_distribution.png
+    - mean_smoothness_distribution.png
+    - mean_texture_distribution.png
+
+- Results file: /home/anild/ros2_ml_ws/src/ml_classifiers_pkg/results/cancer_classification_results_20250615_194842.txt
+
+======================================================================
+END OF REPORT
+======================================================================
