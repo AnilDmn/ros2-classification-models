@@ -12,6 +12,7 @@ ROS 2 nodes: For classification tasks on each dataset
 
 Logging: Model performance and inference results are logged
 
+```bash
 # Project Structure
 
 ml_classifiers_pkg/
@@ -34,7 +35,7 @@ ml_classifiers_pkg/
 │   └── fruit_classification_results_*.txt
 ├── package.xml              # ROS 2 package manifest
 ├── setup.py                 # Python setup script for ROS 2
-
+```
 # Requirements
 ROS 2 Humble or newer
 Python 3.10+
